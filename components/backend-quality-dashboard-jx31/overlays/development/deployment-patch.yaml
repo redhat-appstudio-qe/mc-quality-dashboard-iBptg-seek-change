@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-jx31
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-zcpo-tenant/mc-quality-dashboard/backend-quality-dashboard-jx31@sha256:19d206da0da5e5b1a98a40f95b2dd7f94dd21699c5d0d22a41b274a4b6236f3e
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
